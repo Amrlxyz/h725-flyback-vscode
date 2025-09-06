@@ -102,7 +102,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-      status = HAL_UART_Transmit_IT(&huart1, msg, sizeof(msg));
+      status = HAL_UART_Transmit_DMA(&huart1, msg, sizeof(msg));
       HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
